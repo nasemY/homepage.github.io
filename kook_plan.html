@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Song+Myung&display=swap" rel="stylesheet">
+
+        <script lang="JavaScript">
+            function black(){
+                
+                document.bgColor = "black"
+             
+            }
+
+            function MouseOver(cell, newcolor){
+                cell.bgColor = newcolor;
+            }
+            function MouseOut(cell, newcolor){
+                cell.bgColor = newcolor;
+            }
+        </script>
+
+<meta charset="UTF-8" name="viewport" content="user-scalable=no, initial-scale=1">
+
+        <title>계획</title>
+        <style>
+
+        .box{
+                width: 500px; height: 500px;
+                border: 3px solid black;
+                border-style: double;
+                position: relative;
+                background: white;
+                border-radius: 20px;
+                margin-left: 500px;
+                
+            }
+
+
+             *{
+                font-family: "jua", sans-serif;
+                font-weight: 300;
+            }
+
+            .chart {
+                margin: auto;
+                width: 500px;
+                text-align: center;
+                justify-content: center;
+                align-self: center;
+            }
+
+            .color{
+                background-image: linear-gradient(to Right, skyblue, lightgray);
+                height: 10px;
+            }
+
+        </style>
+    </head>
+
+    <body bgcolor="gray">
+
+<div class="box" >
+        <header align="center">
+            <h1>MY FUTURE PLAN</h1>
+        </header>
+
+       
+        <div class="chart">
+        <table align="center"border=1 >
+            <thead class="color" >
+                <tr>
+                    <th>순번</th>
+                    <th>목표/계획내용</th>
+                </tr>
+            </thead>
+            <thbody >
+                <tr bgcolor="white">
+                    <td>1</td>
+                    <td onMouseover="MouseOver(this,'yellow');" onMouseout="MouseOut(this, 'white');" >C#</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>2</td>
+                    <td onMouseover="MouseOver(this,'yellow');" onMouseout="MouseOut(this, 'white');">백준 - C++</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>3</td>
+                    <td onMouseover="MouseOver(this,'yellow');" onMouseout="MouseOut(this, 'white');">사용 가능한 언어를 활용한 프로젝트</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>4</td>
+                    <td onMouseover="MouseOver(this,'yellow');" onMouseout="MouseOut(this, 'white');">블로그 성장 일기</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>5</td>
+                    <td onMouseover="MouseOver(this,'yellow');" onMouseout="MouseOut(this, 'white');">자격증 공부</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>6</td>
+                    <td onMouseover="MouseOver(this,'yellow');" onMouseout="MouseOut(this, 'white');">대외활동/공모전 활동</td>
+                </tr>
+                <tr bgcolor="white">
+                    <td>7</td>
+                    <td onMouseover="MouseOver(this,'yellow');" onMouseout="MouseOut(this, 'white');">진로 방향성 잡기</td>
+                </tr>
+            </thbody>
+        </table>
+    </div>
+    <input type="button" onclick="black()" value="색 바꾸기">
+       </div>
+
+    </body>
+</html>

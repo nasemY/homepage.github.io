@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Song+Myung&display=swap" rel="stylesheet">
+        <meta charset="UTF-8" name="viewport" content="user-scalable=no, initial-scale=1">
+
+    <title>Introduce</title>
+    <style>
+
+    *{
+                font-family: "jua", sans-serif;
+                font-weight: 300;
+            }
+
+        ul { 
+                overflow:hidden
+                 text-align: center;
+                 margin: 0;
+                 padding: 0;
+            }
+            li {
+                display: inline-block;
+                list-style: none;
+                padding:15px;
+                
+            }
+
+        h2 {
+            font-size: 2.5em;
+        }
+        
+       
+        .intro_image {
+            position: relative;
+            text-align: center;
+            margin-top: 50px; 
+        }
+        .intro_image img {
+            display: block;
+            margin: 0 auto;
+        }
+        .intro_image_front {
+            position: absolute;
+            top: 200px;
+            left: 1050px;
+            z-index: 10;
+        }
+        .main_image_text {
+            position: absolute;
+            top: 190px;
+            left: 180px;
+            transform: translateX(-50%);
+            padding: 10px;
+            z-index: 100;
+            color: white;
+            font-size: 24px;
+        }
+
+        .button {
+            width: 150px;
+            height: 150px;
+            
+        }
+
+        a:link{color:black}
+            a:visited{color:black}
+            a:hover{color:white}
+            a:active{color:white}
+
+            .a {
+                overflow: hidden;
+            }
+
+            .a img{
+                transition: all 0.2s linear;
+            }
+
+        .a:hover img{
+            transform: scale(1.2);
+            
+        }
+
+    </style>
+
+    <script lang="JavaScript">
+        function elementaryOpen(){
+            window.open("https://geumgok-e.goehs.kr/geumgok-e/main.do", "금곡초등학교");
+        }
+        function middleOpen(){
+            window.open("https://isolvit-m.goehs.kr/isolvit-m/main.do", "솔빛중학교", "width-500, height=400, left=0, top=0, resizable=no");
+        }
+        function highOpen(){
+            window.open("https://naru-h.goehs.kr/naru-h/main.do", "나루고등학교", "fullscreen");
+        }
+        function univOpen(){
+            window.open("https://m.kku.ac.kr/mbshome/mbs/wwwkr/index.do", "건국대학교", "channelmode");
+        }
+    </script>
+</head>
+<body bgcolor="lightgray">
+
+    <div class="intro_image">
+        <img src="intro_back.jpg" alt="이미지" height="auto">
+
+        <div class="intro_image_front">
+            <img src="intro_front.jpg" height="250" style="border: 10px solid white;">
+        </div>
+        
+        <div class="main_image_text">
+            <h1><big>Introduce</big></h1>
+        </div>
+    </div>
+
+    <div>
+        <span>
+            <h2><strong>&nbsp; 기본 정보</strong> </h2>
+            <small>좌우명: <font face="굴림체">하고싶은 거 하자</font></small>
+        </sapn>
+    </div>
+
+    <table width="1000px" border="1" >
+        <tr>
+            <th width="200px"><p><b>이름</b> </strong></p></th>
+            <th width="200px"><b>나이</b></th>
+            <th width="200px"><b>MBTI</b></th>
+            <th width="200px"><b>생년월일</b></th>
+        </tr>
+        <tr>
+            <th ><p>국 현 서</p></th>
+            <th >21세</th>
+            <th >INTJ</th>
+            <th> 2004.07.27</th>
+        </tr>
+        <tr>
+            <th width="200px"><address><b>주소</b></address></th>
+            <th width="200px"> <b>이메일</b><br></th>
+            <th width="200px"> <b>전공</b></th>
+            <th width="200px"> <b>동아리</b></th>
+        </tr>
+        <tr>
+            <th ><address>경기도 화성시 / 충주: 모시래 기숙사</address></th>
+            <th >ascii04@kku.ac.kr<br></th>
+            <th >컴퓨터공학과</th>
+            <th >중앙동아리 FOCUS 2023 ~ </th>
+        </tr>
+
+
+    </table>
+    
+    
+   
+    <br>
+    <hr color="black">
+    <br>
+
+    <h2>&nbsp; 학력</h2><br>
+    
+    <ul>
+        <li>
+            <div class="a">
+            <img src="elementary.jpg" style="border-radius: 90px;" width="200" align="middle" alt=""  onclick="elementaryOpen()"> (前)화성금곡초등학교<br> 
+        </div>
+        </li>
+        <li>
+            <div class="a">
+            <img src="middle.jpg" style="border-radius: 90px;" width="200" align="middle" alt="" onclick="middleOpen()"> (前)솔빛중학교<br> 
+        </div>
+        </li>
+        <li>
+            <div class="a">
+            <img src="high.png" style="border-radius: 90px;" width="200" align="middle" alt="" onclick="highOpen()">(前)나루고등학교<br>
+        </div>
+        </li>
+        <li>
+            <div class="a">
+            <img src="univ.jpg" style="border-radius: 90px;" width="200" align="middle" alt="" onclick="univOpen()">(現)건국대학교 글로컬캠퍼스<br> 
+        </div>
+        </li>
+    </ul>
+</div>
+
+    <br>
+    <hr color="black">
+    <br>
+
+
+
+    <h2>&nbsp; 좋아하는 것</h2><br>
+
+    <table align="center">
+        <tr>
+            <th>
+                <img src="seventeen.jpg" width="200px">
+            </th>
+            <th>
+                <img src="camera.png" width="200px">
+            </th>
+        </tr>
+        <tr>
+            <th>
+                세븐틴 - 마에스트로(MAESTRO)
+            </th>
+            <th>
+                사진 찍기
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <audio controls="controls">
+                    <source src="세븐틴 (SEVENTEEN)-01-MAESTRO.mp3" type="audio/mp3">
+                </audio>
+            </th>
+            <th>
+                <a href="kook_photo.html" target=_blank><p>보러가기</p></a>
+            </th>
+        </tr>
+
+    </table>
+
+
+    <br>
+    <hr color="black">
+    <br>
+
+    <h2>&nbsp; 사용할 수 있는 기술 </h2><br>
+
+    <article align="center">
+    <ul>
+        <li><H1>C / C++</H1></li>
+        <li><h1>Java</h1></li>
+        <li><h1>HTML5+CSS3</h1></li>
+        <li><h1>Adobe photohop</h1></li>
+        <li><h1>Adobe premiere pro</h1></li>
+    </ul>
+</article>
+
+
+    <br>
+    <hr color="black">
+    <br>
+
+    <h2>&nbsp; [ 개인 SNS ] </h2><br>
+        
+        
+    <nav align="center">
+        <ul>
+            <li><a href="https://blog.naver.com/nasem_0727" target="_blank"><img src="blog.png" width="50"><figure>현서의 블로그</figure></a></li>
+            <li><a href="https://www.youtube.com/channel/UCM7ccz6I7wU-VfQp95cPydA" target="_blank"><img src="youtube.png" width="40"><figure>현서의 유튜브</figure></a></li>
+            <li><a href="https://www.instagram.com/k0o_.9g/" target="_blank"><img src="instargram.png" width="40"><figure>현서의 인스타그램</figure></a></li>
+            <li style: margin="Right">메일: ascii04@kku.ac.kr</li>
+        </ul>
+    </nav>
+
+   
+  
+</body>
+</html>

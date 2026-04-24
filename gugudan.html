@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+    <title>구구단 게임</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #game-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+        }
+        input[type="button"] {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+    <script lang="JavaScript">
+        var comp1, comp2;
+
+        function startGame() {
+            generateQuestion();
+            document.game.win.value = "0";
+            document.game.step.value = "0";
+        }
+
+        function generateQuestion() {
+            comp1 = Math.floor(Math.random() * 9) + 1;
+            comp2 = Math.floor(Math.random() * 9) + 1;
+            document.game.msg.value = comp1 + " * " + comp2 + " = ?";
+            document.game.answer.value = "";
+            document.game.result.value = "";
+        }
+
+        function checkAnswer() {
+            var answer = parseInt(document.game.answer.value);
+            var correctAnswer = comp1 * comp2;
+
+            if (answer === correctAnswer) {
+                document.game.result.value = "정답입니다!";
+                document.game.win.value = parseInt(document.game.win.value) + 1;
+            } else {
+                document.game.result.value = "틀렸습니다. 정답은 " + correctAnswer + "입니다.";
+            }
+            document.game.step.value = parseInt(document.game.step.value) + 1;
+        }
+    </script>
+</head>
+<body>
+    <div id="game-container">
+        <font size=5>구구단 게임</font><hr>
+        <form name="game">
+            <table border="3" cellpadding="5">
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="button" name="start" value="start" onclick="startGame()">
+                        <input type="button" name="end" value="end">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="text" name="msg" size="45" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="text" name="answer" id="answer" size="45">
+                        <input type="button" name="enter" value="enter" size="3" onclick="checkAnswer()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="text" name="result" id="result" size="45" readonly>
+                        <input type="button" name="next" value="next" size="3" onclick="generateQuestion()">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center"><b>
+                        <input type="text" name="win" readonly value="0" size="2"> 개 정답
+                        <input type="text" name="step" readonly value="0" size="2"> 단계
+                    </b></td>
+                </tr>
+            </table>
+            <a href="kook_right.html"target=Right onfocus="click()">Home.
+        </form>
+    </div>
+</body>
+</html>

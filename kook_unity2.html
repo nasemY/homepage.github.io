@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Song+Myung&display=swap" rel="stylesheet">
+        <meta charset="UTF-8" name="viewport" content="user-scalable=no, initial-scale=1">
+
+        <title>관심있는 주제 - C#에 대해서 알아보자</title>
+
+        <style>
+             *{
+                font-family: "jua", sans-serif;
+                font-weight: 300;
+            }
+
+                         
+
+            div > pre {
+                 width: 600px; height: 200px;
+                border: 3px solid black;
+                border-style:dashed;
+                position: relative;
+                background: white;
+                border-radius: 20px;
+            
+                overflow: scroll; 
+            }
+
+            a:link{color:black}
+            a:visited{color:black}
+            a:hover{color:lightslategray}
+            a:active{color:lightslategray}
+
+        </style>
+    </head>
+
+    <body bgcolor="bbdefd">
+        <br>
+        
+        <h4>|     C#에 대해서 알아보자: unity에서 C#이 사용된다.</h4><br>
+        <ol start="1">
+            <li><h3>C#이란 무엇인가</h3></li>
+            <p>마이크로소프트에서 개발한 객체 지향 프로그래밍 언어, C++와 자바의 문법과 비슷한 문법을 가지고 있다.</p>
+            <p>#이라는 이름은 음표를 연주할 때 반음 올리는 것을 표시하는 올림표에서 따왔다. C++에서 "++"가 변수의 값을 1 증가시키는 것을 의미하는 것과 비슷하다. <br>마찬가지로 올림표는 네 개의 "+" 기호와 비슷하므로 C++를 한번 더 증가시켰다는 뜻도 지닌다.</p>
+
+            <li><h3>C# 들어가기 - Hello World 출력하기</h3></li>
+
+            <div class="box">
+                <pre><code>
+                    using System;
+
+                    namespace _main {
+                     class HelloWorld {
+                            static void Main(string[] args) {
+                                if (args.Length == 0) {
+                                 Console.WriteLine("사용법 : Hello World.exe <이름>");
+                            return;
+                                }
+                    Console.WriteLine($"Hello, {args[0]}!");
+                         }
+                     }
+                }
+                </code></pre>
+            </div>
+       
+            <p>해당 코드에서 C++의 흔적과 Java의 흔적을 볼 수 있다.</p>
+            <table border="1" bgcolor="white">
+                <tr>
+                    <th> C++ </th>
+                    <th>Java</th>
+                </tr>
+                <tr>
+                    <td>  return;  </td>
+                    <td>   class / static / String[] args   </td>
+                </tr>
+            </table>
+
+            <p>C++과 Java 언어를 알고 있는 사람에게는 수월하게 학습할 수 있는 언어이다.</p>
+        </ol>
+
+        <p align="center"><b>
+            <a href="kook_unity.html">1 </a>2
+            <a href="kook_unity3.html">3</a>
+        </b></p>
+
+    </body>
+</html>
